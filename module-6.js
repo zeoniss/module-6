@@ -245,9 +245,12 @@
 // console.log(calculateTotalPrice('Радар'))
 // console.log(calculateTotalPrice('Захват'))
 
-const add = function(...args) {
-    console.log(args) // массив всех аргументов
+function multiply(firstNumber, secondNumber, ...otherArgs) {
+    console.log(firstNumber) // Значение первого аргумента
+    console.log(secondNumber) // Значение второго аргумента
+    console.log(otherArgs) // Массив остальных аргументов
 }
 
-console.log(add(1, 2, 3))
-console.log(add(1, 2, 3, 4, 5))
+console.log(multiply(1, 2))
+console.log(multiply(1, 2, 3))
+console.log(multiply(1, 2, 3, 4))
